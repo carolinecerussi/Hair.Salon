@@ -2,19 +2,19 @@
   Layout = "_Layout";
 }
 
-@model HairSalon.Models.Client;
+@model HairSalon.Models.Client
+
 <h1>New Client</h1>
 
-@using(Html.BeginForm())
+@using (Html.BeginForm())
 {
-  <div class="form-group">
-    @* @Html.LabelFor(model=>model.Stylist)
-    @Html.DropDownList("StylistId") *@
+
+    @Html.LabelFor(model=>model.Stylist)
+    @Html.DropDownList("StylistId") 
     @Html.LabelFor(model=> model.ClientName)
-    @Html.TextBoxFor(model=> model.ClientName, new {required = "required"})
+    @Html.TextBoxFor(model=> model.ClientName, new { @class = "form-control",required="required"})
     @Html.LabelFor(model=> model.PhoneNumber)
     @Html.TextBoxFor(model=> model.PhoneNumber, new {required = "required"})
-  </div>
 
   <input type="submit" value = "Save client"/>
 
