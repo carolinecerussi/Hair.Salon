@@ -47,7 +47,7 @@ This program was built using Microsoft .NET SDK 5.0.401, and may not be compatib
 
 ## Known Bugs
 
-* WIP - has issues navigating to pages(linking to MySql)
+none
 
 ## License
 Copyright (c) 2022 Caroline Cerussi
